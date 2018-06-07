@@ -47,3 +47,5 @@
   renames = true
 [credential]
   helper = osxkeychain
+[ghq]
+  root = ~/Documents/ghq
