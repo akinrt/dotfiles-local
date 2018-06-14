@@ -8,6 +8,7 @@ set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 eval (direnv hook fish)
 
 # python
+set -x PYENV_ROOT $HOME/.pyenv
 source (pyenv init - | psub)
 
 # go
