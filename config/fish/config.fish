@@ -4,6 +4,9 @@ set -x PATH $PATH $HOME/bin /usr/local/sbin
 # git
 set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 
+# rails 5.2
+set -x EDITOR vim
+
 # direnv
 eval (direnv hook fish)
 
