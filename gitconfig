@@ -48,4 +48,4 @@
 [credential]
   helper = osxkeychain
 [ghq]
-  root = ~/Documents/ghq
+  root = ~/ghq

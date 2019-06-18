@@ -7,6 +7,9 @@ set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 # rails 5.2
 set -x EDITOR vim
 
+# nodebrew
+set -x PATH $PATH $HOME/.nodebrew/current/bin
+
 # direnv
 eval (direnv hook fish)
 
