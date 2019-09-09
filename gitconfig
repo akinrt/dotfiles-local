@@ -28,6 +28,7 @@
   attributesfile = ~/.gitattributes
   autocrlf = input
   editor = vim
+	whitespace = cr-at-eol
 [merge]
   ff = only
 [commit]
