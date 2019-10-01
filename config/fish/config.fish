@@ -5,7 +5,7 @@ set -x PATH $PATH $HOME/bin /usr/local/sbin
 set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 
 # rails 5.2
-set -x EDITOR vim
+set -x EDITOR
 
 # nodebrew
 set -x PATH $PATH $HOME/.nodebrew/current/bin
