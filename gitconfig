@@ -50,3 +50,4 @@
   helper = osxkeychain
 [ghq]
   root = ~/ghq
+[pull]
