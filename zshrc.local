@@ -30,7 +30,7 @@ zplug "junegunn/fzf-bin", \
 zplug "plugins/git",   from:oh-my-zsh
 
 # Also prezto
-zplug "modules/prompt", from:prezto
+# zplug "modules/prompt", from:prezto
 
 # Load if "if" tag returns true
 zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
@@ -88,7 +88,7 @@ zplug "zsh-users/zsh-autosuggestions", defer:2
 zplug "~/.zsh", from:local
 
 # Load theme file
-zplug 'dracula/zsh', as:theme
+zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
