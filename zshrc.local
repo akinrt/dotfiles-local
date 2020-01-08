@@ -99,7 +99,7 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-# zplug load --verbose
+zplug load --verbose
 
 # homebrew cask option
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
