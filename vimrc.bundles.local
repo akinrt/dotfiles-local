@@ -1,2 +1,4 @@
 Plug 'Lokaltog/vim-powerline'
 Plug 'stephenmckinney/vim-solarized-powerline'
+Plug 'preservim/nerdtree'
+
