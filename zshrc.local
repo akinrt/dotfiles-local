@@ -107,7 +107,18 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # rbenv
 if which rbenv > /dev/null; then
   export PATH="$HOME/.rbenv/bin:$PATH"
+  export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
   eval "$(rbenv init -)"
+fi
+
+# goenv
+if [ -d ~/.goenv ]; then
+  zplug "RiverGlide/zsh-goenv", from:gitlab
+  export GOENV_ROOT="$HOME/.goenv"
+  export PATH="$GOENV_ROOT/bin:$PATH"
+  eval "$(goenv init -)"
+  export PATH="$GOROOT/bin:$PATH"
+  export PATH="$PATH:$GOPATH/bin"
 fi
 
 # ghq & peco
@@ -120,7 +131,7 @@ function peco-src () {
   zle clear-screen
 }
 zle -N peco-src
-bindkey '^]' peco-src
+bindkey '^g' peco-src
 
 # print image on iterm2 with its pixelHeight and pixelWidth
 function imginfo() {
