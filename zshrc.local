@@ -149,11 +149,6 @@ function mergeapp() {
   open /Applications/Xcode.app/Contents/Applications/FileMerge.app
 }
 
-# show path in $PATH
-function pathlist() {
-  path
-}
-
 # print headers
 function curlh() {
   curl -D - -s -o /dev/null $argv[1]
@@ -163,3 +158,6 @@ function curlh() {
 function docker-rm-all() {
   docker rm (docker ps -a -q)
 }
+
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
