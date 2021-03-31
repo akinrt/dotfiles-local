@@ -12,5 +12,6 @@
   cml = "!f() { git log $1 --pretty=format:\"<li><a href='\"http://github.com/$2/commit/%H\"'>view commit</a> %s</li>\"; }; f"
   bk = "!f() { git branch $1-bk`date \"+%Y%m%d%H%M%S\"`$2; }; f"
   tidy = !git checkout master && git branch --merged | grep -v \"*\" | xargs -I % git branch -d %
+  tidy2 = !git checkout main && git branch --merged | grep -v \"*\" | xargs -I % git branch -d %
 [ghq]
   root = ~/ghq
